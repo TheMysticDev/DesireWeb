@@ -1,0 +1,131 @@
+/* src/pages/ProfilePage.css */
+.profile-container {
+    display: flex;
+    height: 100vh;
+}
+
+.profile-sidebar {
+    width: 120px;
+    background: linear-gradient(to bottom, #ff758c 0%, #ff7eb3 100%);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.profile-sidebar:hover {
+    width: 250px;
+}
+
+.profile-sidebar .sidebar-nav {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-sidebar .sidebar-nav li {
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.profile-sidebar .sidebar-nav li:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.profile-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f0f0f0;
+    overflow-y: hidden;
+}
+
+.profile-content h1,
+.profile-content h2 {
+    color: #ff758c;
+}
+
+.profile-content h1,
+.profile-content h2 {
+    text-shadow: 0 0 5px rgba(255, 75, 140, 0.7);
+}
+
+/* src/components/SettingsComponent.css */
+.settings-container {
+    max-width: 360px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #f8f8f8;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    border: 1px solid #eaeaea;
+}
+
+.settings-container h2 {
+    color: #ff758c;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.settings-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #aeaeae;
+}
+
+.settings-container form label {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.settings-container form input {
+    padding: 12px;
+    width: 300px;
+    border: 1px solid #ccc;
+    color: #4a4a4a;
+    border-radius: 8px;
+    font-size: 15px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.settings-container form input:focus {
+    outline: none;
+    border-color: #ff758c;
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.2);
+}
+
+
+.settings-container form button {
+    padding: 15px 20px;
+    background-color: #ff758c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.settings-container form button:hover {
+    background-color: #ff7eb3;
+    transform: translateY(-3px);
+}
+
+.settings-container form button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}

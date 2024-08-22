@@ -1,0 +1,29 @@
+/* src/pages/SubscribeComponent.css */
+.subscribe-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.subscribe-content {
+    text-align: center;
+    color: #838282;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #ff758c;
+    box-shadow: 0 10px 25px rgba(255, 117, 140, 0.5);
+}
+
+.subscribe-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: #ff758c;
+    text-shadow: 0 0 15px #ff758c;
+}
+
+.subscribe-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}

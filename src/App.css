@@ -1,0 +1,14 @@
+.dark-mode {
+  --primary-color: #ff758c;
+  background: #282b30;
+  color: #fff;
+}
+
+.dark-mode .settings-container,
+.dark-mode .profile-content {
+  background: #282b30;
+}
+
+.dark-mode .profile-sidebar {
+  background: #36393e;
+}

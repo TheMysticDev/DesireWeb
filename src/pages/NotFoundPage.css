@@ -1,0 +1,67 @@
+/* src/pages/NotFoundPage.css */
+.not-found-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #121212;
+}
+
+.not-found-content {
+    text-align: center;
+    color: #fff;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    border: 2px solid #ff758c;
+    box-shadow: 0 10px 25px rgba(255, 117, 140, 0.5);
+}
+
+.not-found-content h1 {
+    font-size: 4rem;
+    margin-bottom: 0.5rem;
+    color: #ff758c;
+    text-shadow: 0 0 15px #ff758c;
+}
+
+.not-found-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.not-found-content button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ff758c;
+    border: 2px solid #ff758c;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.not-found-content button:hover {
+    background-color: #ff758c;
+    color: white;
+    box-shadow: 0 0 15px #ff758c;
+}
+
+.not-found-content button {
+    position: relative;
+}
+
+.leon-emoji {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.not-found-content button:hover .leon-emoji {
+    opacity: 1;
+}

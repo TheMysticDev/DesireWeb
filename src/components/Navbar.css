@@ -1,0 +1,154 @@
+/* Incorpora una fuente de Google Fonts en tu archivo index.html para esto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: linear-gradient(to right, #ff758c 0%, #ff7eb3 100%);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar__logo {
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+}
+
+.navbar__logo:hover {
+    transform: scale(1.1);
+    color: #fd9ac3;
+}
+
+.navbar__search {
+    padding: 0.5rem 1rem;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    width: 20%;
+}
+
+.navbar__search:focus {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar__items {
+    display: flex;
+}
+
+.navbar__button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.navbar__button:hover {
+    background-color: white;
+    color: #ff758c;
+    transform: translateY(-2px);
+}
+
+.navbar__button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: white;
+    transition: width 0.2s;
+}
+
+.navbar__button:hover::after {
+    width: 100%;
+}
+
+/* Estilos para la versión móvil o responsiva */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar__search {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+
+    .navbar__items {
+        flex-direction: column;
+    }
+
+    .navbar__button {
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.navbar__dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar__dark-mode-toggle:hover {
+    color: #ff7eb3;
+}
+
+.dark-mode {
+    background: linear-gradient(to right, #333 0%, #555 100%);
+    color: #ddd;
+}
+
+.dark-mode .navbar__search,
+.dark-mode .navbar__button {
+    color: #ddd;
+    border-color: #ddd;
+}
+
+.dark-mode .navbar__logo {
+    color: #ddd;
+}
+
+.dark-mode .navbar__search:focus {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .navbar__button:hover {
+    background-color: #555;
+    color: #ff758c;
+}
+
+.navbar__logo.animate {
+    animation: logoAnimation 0.5s ease;
+}
+
+@keyframes logoAnimation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
